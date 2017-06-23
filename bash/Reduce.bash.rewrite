@@ -15,7 +15,6 @@ for e in "${!Arr1[@]}"
 do
     for check in "${Arr2[@]}"
     do
-        unset Jump
         [[ ${Arr1[${e}]} =~ ^${check}$ ]]
 
         if [ -n "${BASH_REMATCH[*]}" ]; then
